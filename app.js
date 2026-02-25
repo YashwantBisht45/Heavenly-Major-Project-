@@ -121,8 +121,8 @@ app.use((req,res,next) => {
 
 
 app.get("/", (req,res) => {
-    res.send('hi, im root')
-})
+    res.redirect("/listings");
+});
 
 
 app.use("/listings", listingRouter);
