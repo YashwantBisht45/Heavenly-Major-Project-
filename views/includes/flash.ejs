@@ -1,0 +1,14 @@
+<% if(success && success.length) {%>    <!--  success ek array hai toh ek empty aaray bhi true hoga toh isiliye success array ki length check karne ki need hai -->
+<div class="alert alert-success alert-dismisssible fade show col-6 offset-3" role="alert">
+    <%= success %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
+
+
+<% if(error && error.length) {%>    <!--  success ek array hai toh ek empty aaray bhi true hoga toh isiliye success array ki length check karne ki need hai -->
+<div class="alert alert-danger alert-dismisssible fade show col-6 offset-3" role="alert">
+    <%= error %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
